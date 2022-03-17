@@ -19,8 +19,11 @@ html, body{
     font-family: kooky;
     background-color: #f6f6f6;
     width: calc(100% - 10px);
-    /* overflow: hidden; */
-    /* height: 100vh; */
+    /* margin: auto; */
+}
+
+.ui-loader{
+    display: none;
 }
 
 .main{
@@ -67,6 +70,21 @@ html, body{
 
 h3,ul{
     align-self: flex-start;
+    margin:  5px 20px;
+}
+
+ul{
+    margin-bottom: 30px;
+}
+
+.descrizione{
+    margin: 30px 20px;
+    align-self: flex-start;
+}
+
+.tip{
+    align-self: center;
+    text-align: center;
 }
 
 .celebrate{
@@ -97,3 +115,72 @@ h3,ul{
     width: 100%;
 }
 
+.match{
+    background-image: url(./src/img/silver.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    position: fixed;
+    top: 0;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+}
+
+/* .appear{
+    opacity: 1;
+} */
+
+    .map{
+        width: 50%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    }
+
+@media screen and (max-width: 900px) {
+    .main{
+        max-width: 92vw;
+    }
+
+    .title{
+        font-size: 20vw;
+        top: -50px;
+    }
+
+    .ippocampo{
+        font-size: 20vw;
+    }
+
+    .ippocampo:first-of-type{
+        margin-top: 15vh;
+    }
+
+    .celebrate{
+        font-size: 6vw;
+        top: 20px;
+    }
+
+    .blanket{
+        position: relative;
+        top: 140px;
+    }
+
+    .pda{
+        width: 100%;
+    }
+
+    .map{
+        width: 80%;
+        height: 60%;
+    }
+
+    .match .ippocampo{
+        font-size: 15vw;
+    }
+}

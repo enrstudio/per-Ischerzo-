@@ -17,8 +17,10 @@
   }
   .buddy {
     grid-area: buddy;
+    display: flex;
     display: none;
     flex-direction: column;
+    justify-content: space-between;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -26,7 +28,8 @@
     padding: 20px;
     width: 80vw;
     max-width: 400px;
-    height: auto;
+    height: 480px;
+    /* min-height: 500px; */
     cursor: hand;
   }
   .rotate-left {
@@ -64,7 +67,7 @@
       justify-content: center;
       color: black;
       font-size: larger;
-      width: 100%;
+      /* width: 100%; */
       margin: 0;
       padding: 25px;
       padding-bottom: 10px;

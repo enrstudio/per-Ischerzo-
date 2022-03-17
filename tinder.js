@@ -7,6 +7,10 @@ $(document).ready(function(){
       $(this).append('<div class="status like">Like!</div>');      
       if ( $(this).is(':last-child') ) {
         $('.buddy:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
+          // alert("IT'S MATCH!");
+          $( "body" ).css( "margin", "0" );
+          $( ".match" ).css( "display", "flex" ).delay(1000).fadeIn();
+          // $( ".match" ).addClass( "appear");
        } else {
           $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
        }
@@ -19,7 +23,7 @@ $(document).ready(function(){
 
     if ( $(this).is(':last-child') ) {
      $('.buddy:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
-      // alert('fesso!');
+      alert('Hai perso una grande occasione!');
      } else {
         $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
     } 
