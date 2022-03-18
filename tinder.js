@@ -16,9 +16,9 @@ $(document).ready(function(){
           var context = new AudioContext();
           // One-liner to resume playback when user interacted with the page.
           context.resume().then(() => {
+            document.getElementById("toxic").play();
           });
 
-          var audio = document.getElementById("toxic").play();
 
           // $( ".match" ).addClass( "appear");
        } else {
