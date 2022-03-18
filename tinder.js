@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
 
     $(".buddy").on("swiperight",function(){
@@ -10,6 +12,14 @@ $(document).ready(function(){
           // alert("IT'S MATCH!");
           $( "body" ).css( "margin", "0" );
           $( ".match" ).css( "display", "flex" ).delay(1000).fadeIn();
+
+          var context = new AudioContext();
+          // One-liner to resume playback when user interacted with the page.
+          context.resume().then(() => {
+          });
+
+          var audio = document.getElementById("toxic").play();
+
           // $( ".match" ).addClass( "appear");
        } else {
           $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
