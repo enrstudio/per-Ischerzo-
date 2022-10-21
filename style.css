@@ -17,7 +17,8 @@
 
 html, body{
     font-family: kooky;
-    background-color: #f6f6f6;
+    background-color: black;
+    color: red;
     width: calc(100% - 10px);
     /* margin: auto; */
 }
@@ -65,7 +66,8 @@ html, body{
     font-size: 140px;
     margin: 0 0;
     position: relative;
-    top: -150px;
+    text-align: center;
+    /* top: -150px; */
 }
 
 h3,ul{
@@ -88,14 +90,11 @@ ul{
 }
 
 .celebrate{
-    /* font-family: kooky; */
     font-family: kooky;
     font-weight: 400;
     font-size: 40px;
     margin: 0;
     padding: 0;
-    position: relative;
-    top: 50px;
     font-style: italic;
 }
 
@@ -110,42 +109,44 @@ ul{
     font-size: 100px;
 }
 
+.margin_top_s{
+    padding-top: 10vh;
+}
+
 .blanket{
     grid-area: cover;
     width: 100%;
 }
 
-.match{
-    background-image: url(./src/img/silver.jpg);
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-    position: fixed;
-    top: 0;
-    margin: auto;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: none;
-
+.a_center{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
 }
+
+.blink_me {
+    animation: blinker 0.1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
 
 /* .appear{
     opacity: 1;
 } */
 
-    .map{
-        width: 50%;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgb(0 0 0 / 20%);
-    }
-
 @media screen and (max-width: 900px) {
     .main{
         max-width: 92vw;
+    }
+
+    video{
+        width: 95%;
+        margin-bottom: 5vh;
     }
 
     .title{
@@ -158,11 +159,11 @@ ul{
     }
 
     .ippocampo:first-of-type{
-        margin-top: 15vh;
+        margin-top: 5vh;
     }
 
     .celebrate{
-        font-size: 6vw;
+        font-size: 5.5vw;
         top: 20px;
     }
 
@@ -175,12 +176,24 @@ ul{
         width: 100%;
     }
 
-    .map{
-        width: 80%;
-        height: 60%;
+    .scary{
+        width: 90%;
     }
 
     .match .ippocampo{
         font-size: 15vw;
     }
+
+    h2{
+        font-size: 5.5vw;
+    }
+
+    .tip{
+        font-weight: 400;
+        padding: 0 2vh;
+    }
+
+    /* #game{
+        width: 95%;
+    } */
 }
