@@ -31,7 +31,8 @@ body {
   justify-content: center;
 }
 #game .block:hover:after {
-  content: "☠ GAME OVER ☠";
+  content: "☠";
+  font-size: 100px;
 }
 #game #block-1 {
   width: 10px;
