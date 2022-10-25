@@ -32,7 +32,9 @@ body {
 }
 #game .block:hover:after {
   content: "☠";
+  white-space: pre-wrap;
   font-size: 100px;
+  font-family: Segoe UI Symbol;
 }
 #game #block-1 {
   width: 10px;
@@ -191,7 +193,6 @@ body {
 @media screen and (max-width: 900px) {
   #game .block:hover:after {
     content: "☠ GAME OVER ☠ \A tap out and retry";
-    white-space: pre-wrap;
     font-size: 25px;
   }
 }
