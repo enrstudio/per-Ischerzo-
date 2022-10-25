@@ -125,6 +125,12 @@ ul{
     margin: 0;
 }
 
+.arrow{
+    width: 100%;
+    text-align: center;
+
+}
+
 .blink_me {
     animation: blinker 0.1s linear infinite;
   }
@@ -205,7 +211,7 @@ ul{
     pre{
         font-family: monospace;
         white-space: pre;
-        font-size: 2vw;
+        font-size: 6px;
       }
 
     /* #game{
