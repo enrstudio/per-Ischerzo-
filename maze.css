@@ -34,7 +34,7 @@ body {
   content: "☠";
   white-space: pre-wrap;
   font-size: 100px;
-  font-family: "Segoe UI Symbol";
+  font-family: monospace !important;
 }
 #game #block-1 {
   width: 10px;
