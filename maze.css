@@ -31,7 +31,7 @@ body {
   justify-content: center;
 }
 #game .block:hover:after {
-  content: "NON CE LA PUOI FARE";
+  content: "☠ GAME OVER ☠";
 }
 #game #block-1 {
   width: 10px;
@@ -103,10 +103,11 @@ body {
   position: absolute;
   right: 60px;
   top: 20px;
-  background: #276752;
+  background: greenyellow;
   width: 30px;
   height: 30px;
   color: #fff;
+  box-shadow: inset 3px 5px 4px #276752;
 }
 /* #game #win-link:hover {
   position: absolute;
@@ -184,4 +185,12 @@ body {
   0% { opacity: 1; }
   /* 50% { opacity: 0; } */
   100% { opacity: 0; }
+}
+
+@media screen and (max-width: 900px) {
+  #game .block:hover:after {
+    content: "☠ GAME OVER ☠ \A tap out and retry";
+    white-space: pre-wrap;
+    font-size: 25px;
+  }
 }
