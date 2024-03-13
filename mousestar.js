@@ -3,6 +3,7 @@ let coloreStella; // Colore della stella
 
 // Funzione di avvio di p5.js
 function setup() {
+
     let overlay = createCanvas(windowWidth, windowHeight); // Crea un canvas che copre l'intera finestra
     overlay.position(0, 0); // Posiziona il canvas sopra tutto il contenuto HTML
     noCursor(); // Nasconde il cursore predefinito del mouse
@@ -50,7 +51,7 @@ function draw() {
     endShape(CLOSE); // Chiude la forma della stella
 
     // Aggiorna il diametro della stella per l'effetto di feedback
-    diametro += 20;
+    diametro += 10;
     if (diametro > 600) {
         diametro = 0; // Ripristina il diametro quando raggiunge un certo limite
     }

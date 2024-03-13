@@ -4,6 +4,13 @@
     src: url(src/font/Kooky-Regular.ttf);
 }
 
+.video{
+    width: 98%;
+    /* color: rgb(39, 56, 136); */
+}
+.no-m-top{margin-top: 0;}
+.no-m-bottom{margin-bottom: 0;}
+
 #overlay {
     position: absolute;
     top: 0;
@@ -138,7 +145,7 @@ html, body{
 .title{
     grid-area: cover;
     font-size: 140px;
-    margin: 0 0;
+    margin: 5vh 0;
     position: relative;
     text-align: center;
     /* top: -150px; */
@@ -162,10 +169,11 @@ ul{
 }
 
 .descrizione{
-    margin: 30px 20px;
+    /* margin: 30px 20px; */
     /* width: 90%; */
     /* align-self: flex-start; */
     font-weight: 400;
+    margin-bottom: 5vh;
 }
 
 .tip{
@@ -237,34 +245,23 @@ ul{
         max-width: 92vw;
     }
     .copertina{
-        height: 80%;
+        height: 80vh;
+        justify-content: space-between;
     }
 
     .video{
         width: 95%;
-        margin-bottom: 5vh;
+        /* margin-bottom: 5vh; */
     }
 
     .title{
         font-size: 20vw;
     }
 
-    .ippocampo{
-        font-size: 20vw;
-    }
-
-    .ippocampo:first-of-type{
-        margin-top: 5vh;
-    }
 
     .celebrate{
         font-size: 5.5vw;
         top: 20px;
-    }
-
-    .blanket{
-        position: relative;
-        top: 140px;
     }
 
     .pda{
