@@ -4,6 +4,11 @@
     src: url(src/font/Kooky-Regular.ttf);
 }
 
+.scrt_link{
+    text-decoration: none;
+    color: rgb(72, 131, 72)
+}
+
 .video{
     width: 98%;
     /* color: rgb(39, 56, 136); */
@@ -77,6 +82,7 @@ font-style: normal;
     width: 100%;
     height: 42px!important;
     margin: 0;
+    margin-bottom: 5vh;
     font-size: 20px;
     border: none;
     background-color: rgb(72, 131, 72);
@@ -151,10 +157,10 @@ html, body{
     /* top: -150px; */
 }
 
-a{
+/* a{
     text-decoration: none;
     color: rgb(72, 131, 72)
-}
+} */
 a:hover{
     animation: blinker 0.1s linear infinite
 }
@@ -200,8 +206,8 @@ ul{
     font-size: 100px;
 }
 
-.margin_top_s{
-    padding-top: 10vh;
+.margin_y{
+    margin: 10vh 0;
 }
 
 .blanket{
@@ -214,6 +220,8 @@ ul{
     text-align: center;
     width: 100%;
     margin: 0;
+    padding-top: 5vh;
+    padding-bottom: 2.5vh;
 }
 
 .arrow{
@@ -299,7 +307,8 @@ ul{
         font-size: 10px;
     }
 
-    /* #game{
-        width: 95%;
-    } */
+    .versione{
+        font-size: 12px;
+    }
+
 }
