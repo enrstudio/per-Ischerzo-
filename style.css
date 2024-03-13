@@ -254,6 +254,7 @@ ul{
     }
     .copertina{
         height: 80vh;
+        max-width: 100%;
         justify-content: space-between;
     }
 
