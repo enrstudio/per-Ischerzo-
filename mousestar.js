@@ -8,7 +8,7 @@ function setup() {
     overlay.position(0, 0); // Posiziona il canvas sopra tutto il contenuto HTML
     noCursor(); // Nasconde il cursore predefinito del mouse
     diametro = 0; // Inizializza il diametro della stella
-    bordoStella = color(256, 0, 0); // Imposta il colore della stella (rosso)
+    bordoStella = color(256, 0, 0, 80); // Imposta il colore della stella (rosso)
     coloreStella = color(0, 0, 0, 0); // Imposta il colore della stella (rosso)
 }
 
